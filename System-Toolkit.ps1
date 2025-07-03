@@ -7,12 +7,9 @@ Import-Module Storage -ErrorAction SilentlyContinue
 
 # 1. Activate Windows
 function Activate-Windows {
-    Write-Host "`n[+] Activating Windows..." -ForegroundColor Yellow
-    try {
+   
         irm https://get.activated.win | iex
-    } catch {
-        Write-Host "Activation failed: $_" -ForegroundColor Red
-    }
+ 
     Pause
 }
 
