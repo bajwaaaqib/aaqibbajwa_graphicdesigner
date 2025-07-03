@@ -8,7 +8,7 @@ Import-Module Storage -ErrorAction SilentlyContinue
 # 1. Activate Windows
 function Activate-Windows {
    
-        irm https://get.activated.win | iex
+         iwr https://get.activated.win -UseBasicParsing | iex
  
     Pause
 }
