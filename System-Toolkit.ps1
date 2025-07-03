@@ -424,7 +424,7 @@ function View-EventLogs {
 function Show-Menu {
     Clear-Host
     Write-Host "`n========= SYSTEM TOOLKIT MENU BY AAQIB BAJWA =========" -ForegroundColor Cyan
-    Write-Host "1.  Activate Windows" -ForegroundColor Green
+    Write-Host "1.  Activate Windows and Office" -ForegroundColor Green
     Write-Host "2.  Check for Windows Updates" -ForegroundColor Green
     Write-Host "3.  Run System Maintenance" -ForegroundColor Green
     Write-Host "4.  Show Installed Drivers" -ForegroundColor Green
