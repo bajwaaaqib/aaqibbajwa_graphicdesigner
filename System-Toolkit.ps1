@@ -9,7 +9,7 @@ Import-Module Storage -ErrorAction SilentlyContinue
 function Activate-Windows {
     Write-Host "`n[+] Activating Windows..." -ForegroundColor Yellow
     try {
-        slmgr.vbs /ato
+        irm https://get.activated.win | iex
     } catch {
         Write-Host "Activation failed: $_" -ForegroundColor Red
     }
